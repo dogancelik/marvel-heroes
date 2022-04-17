@@ -1,0 +1,33 @@
+.HeroItem {
+    position: relative;
+    height: 400px;
+    background-image: var(--image-url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.HeroItem .info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    opacity: 0.25;
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.HeroItem:hover .info {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.HeroItem h2 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
