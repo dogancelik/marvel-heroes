@@ -31,3 +31,29 @@
     font-size: 3rem;
     font-weight: bold;
 }
+
+.HeroItem button {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.HeroItem .comics {
+    list-style-type: circle;
+}
+
+.HeroItem .comics li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.HeroItem .comics li::before {
+    content: "●\00a0";
+}
+
+.HeroItem .comics a {
+    color: white;
+}
+.HeroItem .comics a:hover {
+    color: yellow;
+}
